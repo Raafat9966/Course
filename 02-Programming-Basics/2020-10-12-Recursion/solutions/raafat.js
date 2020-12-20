@@ -13,12 +13,33 @@
 // !power
 // function circuitPower(voltage, current) {
 //  if (current == 1) return voltage;
-//  else return voltage * circuitPower(voltage, current - 1);
+//  else return voltage + circuitPower(voltage, current - 1);
+// }
+// console.log(circuitPower(230, 10));
+// !addition
+function addition(num) {
+    if (num == 0) return 1;
+    else if (num < 0) return ++num;
+    else return ++num;
+}
+console.log(addition(3));
+
+
+
+function addition(num) {
+    return ++num;
+}
+console.log(addition(3));
+
+// !power
+// function circuitPower(voltage, current) {
+//  if (current == 1) return voltage;
+//  else return voltage + circuitPower(voltage, current - 1);
 // }
 // console.log(circuitPower(230, 10));
 // !fibonacci
 // const fibonacci = (number) => {
-// 	if (number <= 1) return 1;
-// 	return fibonacci(number - 1) + fibonacci(number - 2);
+//  if (number <= 1) return 1;
+//  return fibonacci(number - 1) + fibonacci(number - 2);
 // };
 // console.log(fibonacci(9));
